@@ -1,6 +1,13 @@
 % analog test
 
-daqlist
+d=daqlist;
+
+%get device info
+d(1,:)
+d{1,"DeviceInfo"}
+dq = daq("ni")
+
+
 d=daq("ni")
 addoutput(d, "Dev1", "ao0", "Voltage");
 output=0;
