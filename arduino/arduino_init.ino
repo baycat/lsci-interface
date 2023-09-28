@@ -1,6 +1,7 @@
 unsigned char bits[2048];
 
 void setup() {
+    //set up output pins
     pinMode(2, OUTPUT);
     pinMode(3, OUTPUT);
     pinMode(4, OUTPUT);
