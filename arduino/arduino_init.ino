@@ -6,8 +6,12 @@ void setup() {
     pinMode(3, OUTPUT);
     pinMode(4, OUTPUT);
 
-    //Vertical Transfer Period Signals
+    //Vertical Transfer Period Signals Masks
     // SH1_VTP = 0
+
+    // Vertical Transfer Periods Timings
+    // Number of 15ns each timing period is
+    vtp_timings = [02, 10, 02, 02, 08, 20, 12, 02, 10, 10, 20, 02, 02, 02, 10, 10, 01, 01]
 
     for(int i=0; i< 2048; i++) {
         bits[i] |= 0;
